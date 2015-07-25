@@ -1,8 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
 
 sudo -v
 
 brew cleanup -s
+brew prune
 
 npm cache -g clear
 rm -rf ~/.npm
