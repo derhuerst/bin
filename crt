@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+name='self-signed'
+
+openssl genrsa -des3 -out $name.pass.key 2048
+openssl rsa -in $name.pass.key -out $name.key
+openssl req -new -key $name.key -out $name.csr
+openssl x509 -req -days 365 -in $name.csr -signkey $name.key -out $name.crt
+
+echo "SHA1 fingerprint:\n"
+openssl x509 -in $name.crt -sha1 -noout -fingerprint
+
+rm $name.pass.key
+rm $name.csr
