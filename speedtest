@@ -1,0 +1,3 @@
+#!env sh
+
+speedtest_cli --simple --bytes
