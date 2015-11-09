@@ -1,0 +1,3 @@
+#!sh
+
+java -jar ~/bin/Minecraft.jar
