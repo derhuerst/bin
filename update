@@ -6,6 +6,3 @@ brew update
 brew upgrade --all
 
 npm update -g
-
-sudo gem update --system
-sudo gem update
