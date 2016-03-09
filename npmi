@@ -1,3 +1,3 @@
-#!env zsh
+#!/usr/bin/env fish
 
-echo "$(npm info $1 version) | $(npm info $1 author)\n$(npm info $1 description)"
+echo (npm info $argv[1] version) \| (npm info $argv[1] author) \n (npm info $argv[1] description)

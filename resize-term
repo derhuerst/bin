@@ -1,3 +1,5 @@
-#!/bin/zsh
+#!/usr/bin/env fish
 
-echo -ne "\e[8;$2;$1t"
+set -l width  $argv[1]
+set -l height $argv[2]
+echo -ne '\e[8;'$width';'$height't'
