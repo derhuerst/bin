@@ -1,3 +1,0 @@
-#!sh
-
-fzf | xargs st

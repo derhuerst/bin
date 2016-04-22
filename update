@@ -6,3 +6,5 @@ brew update
 brew upgrade --all
 
 npm update -g
+
+softwareupdate -i -r
