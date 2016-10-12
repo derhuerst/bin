@@ -3,7 +3,8 @@
 sudo -v
 
 brew update
-brew upgrade --all
+brew upgrade
+brew cask update
 
 npm update -g
 
