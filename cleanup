@@ -11,10 +11,6 @@ rm -rf ~/.node-gyp
 
 sudo gem cleanup -q
 
-# rebuild ZSH completion index
-rm -f ~/.zcompdump
-compinit
-
 # clear Mail.app downloaded attachments
 rm -rf ~/Library/Containers/com.apple.mail/Data/Library/Mail\ Downloads/*
 
